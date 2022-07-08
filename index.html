@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reading Plan</title>
-        <link rel="stylesheet" href="css/style.css">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    </head>
-    <body>
-        
-        <main class="">
-            
-            <div class="container-fluid">
-                <div class="row vh-100">
-                    <div class="col-12 d-flex justify-content-center align-items-center">
-                        <div class="container shadow-lg p-3 bg-body rounded">
-                            <div class="row">
-                                <div class="col-6 img-login">
-                                    <img src="assets/images/glasses.svg" alt="" class="img-fluid" />
-                                </div>
-                                <div class="col d-flex justify-content-center align-items-center" id="card-login">
-                                    <form class="needs-validation login-form" novalidate>
-                                        <div class="row card-login">
-                                            <div class="col">
-                                                <h2 class="mb2">LOGIN</h2>
-                                                <div class="mb-3">
-                                                    <label for="email-logar" class="form-label">Email address</label>
-                                                    <input type="email"  id="email-logar" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="mb-3">
-                                                    <label for="senha-logar" class="form-label">Password</label>
-                                                    <input type="password" id="senha-logar" class="form-control" required/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div class="mb-3">
-                                            <label for="" class="form-check-label">Check me out</label>
-                                            <input type="checkbox"  id="" class="form-check-input" />
-                                        </div> -->
-                                        <div class="mt-4">
-                                            <input type="submit" value="Entrar" class="btn btn-primary" id="btn-logar">
-                                            <a href="#" class="link ms-2" id="btn-cadastrar">Creat Account</a>
-                                        </div>
-                                    </form>
-                                </div>
-    
-                                <!-- CARD CADASTRAR, ESTÁ OCULTO COM DISPLAY NONE -->
-                                <div class="col d-flex justify-content-center align-items-center" id="card-cadastro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Plan</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="">
+      <div class="container-fluid">
+        <div class="row vh-100">
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <div class="container shadow-lg p-3 bg-body rounded">
+              <div class="row">
+                <div class="col-6 img-login">
+                  <img
+                    src="assets/images/glasses.svg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div
+                  class="col d-flex justify-content-center align-items-center"
+                  id="card-login"
+                >
+                  <form class="needs-validation login-form" novalidate>
+                    <div class="row card-login">
+                      <div class="col">
+                        <h2 class="mb2">LOGIN</h2>
+                        <div class="mb-3">
+                          <label for="email-logar" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            id="email-logar"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="senha-logar" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            id="senha-logar"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <label for="" class="form-check-label">Check me out</label>
+                        <input type="checkbox"  id="" class="form-check-input" />
+                    </div> -->
+                    <div class="mt-4">
+                      <input
+                        type="submit"
+                        value="Entrar"
+                        class="btn btn-primary"
+                        id="btn-logar"
+                      />
+                      <a
+                        href="#"
+                        class="link ms-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        id="btn-cadastrar"
+                        >Criar Conta</a
+                      >
+                    </div>
+                  </form>
+                </div>
+
+                <!-- CARD CADASTRAR, ESTÁ OCULTO COM DISPLAY NONE -->
+                <!-- <div class="col d-flex justify-content-center align-items-center" id="card-cadastro">
                                     <form class="needs-validation login-form" novalidate>
                                         <div class="row">
                                             <div class="col">
@@ -77,17 +113,108 @@
                                             <input type="submit" value="Cancelar" class="btn btn-primary" id="btn-cancelar">
                                         </div>
                                     </form>
-                                </div>
+                                </div> -->
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          CADASTRE-SE
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="needs-validation login-form" novalidate>
+                          <div class="row">
+                            <div class="col">
+                              <div class="mb-3">
+                                <label for="email-cadastrar" class="form-label"
+                                  >Endereço de E-mail</label
+                                >
+                                <input
+                                  type="email"
+                                  id="email-cadastrar"
+                                  class="form-control"
+                                  required
+                                />
+                              </div>
                             </div>
-                        </div>
-                    </div>  
+                            <div class="col-12">
+                              <div class="mb-3">
+                                <label for="senha-cadastrar" class="form-label"
+                                  >Senha</label
+                                >
+                                <input
+                                  type="password"
+                                  id="senha-cadastrar"
+                                  class="form-control"
+                                  required
+                                />
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="mb-3">
+                                <label
+                                  for="input-confirma-senha"
+                                  class="form-label"
+                                  >Confirmar Senha</label
+                                >
+                                <input
+                                  type="password"
+                                  id="confirma-senha"
+                                  class="form-control"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Fechar
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          id="btn-salvar"
+                        >
+                          Salvar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-        </main>
-
-    
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
